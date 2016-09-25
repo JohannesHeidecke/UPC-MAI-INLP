@@ -12,6 +12,9 @@ from statistics import mean, stdev
 
 import warnings
 
+import plot
+from plot import plotHistogram
+
 def tokenCountsFromFile(filePath, 
 tokenCounts = {}, 
 onlyPurelyAlphabetic = False, 
@@ -119,6 +122,13 @@ def textualOutput(resultTuples, maxRows = 20):
 	print('mean: ' + str(statisticalResults['mean']))
 	print('stdev: ' + str(statisticalResults['stdev']))
 
+def plotKs(resultTuples):
+	# add all k values from resultTuples to a list
+	ks = []
+	for item in resultTuples:
+		ks.append(item[4])
+	# use plot module to plot the ks
+	plotHistogram(ks)
 
 
 tokenCounts = tokenCountsFromFile('corpus/en.txt', 
@@ -128,6 +138,7 @@ tokenCounts = tokenCountsFromFile('corpus/en.txt',
 	useLemmatization = True)
 resultTuples = createResultTuples(tokenCounts)
 textualOutput(resultTuples, maxRows = 20)
+plotKs(resultTuples)
 
 
 
