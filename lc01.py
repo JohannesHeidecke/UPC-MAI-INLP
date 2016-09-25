@@ -98,11 +98,15 @@ def createResultTuples(tokenCounts):
 	# return result:
 	return result
 
-def statisticalResultsK(resultTuples):
+def getKsFromResultTuples(resultTuples):
 	# add all k values from resultTuples to a list
 	ks = []
 	for item in resultTuples:
 		ks.append(item[4])
+	return ks
+
+def statisticalResultsK(resultTuples):
+	ks = getKsFromResultTuples(resultTuples)
 	# use statistics module to calculate mean and stdev and return results
 	statisticalResults = {}
 	statisticalResults['mean'] = mean(ks)
@@ -123,10 +127,7 @@ def textualOutput(resultTuples, maxRows = 20):
 	print('stdev: ' + str(statisticalResults['stdev']))
 
 def plotKs(resultTuples):
-	# add all k values from resultTuples to a list
-	ks = []
-	for item in resultTuples:
-		ks.append(item[4])
+	ks = getKsFromResultTuples(resultTuples)
 	# use plot module to plot the ks
 	plotHistogram(ks)
 
