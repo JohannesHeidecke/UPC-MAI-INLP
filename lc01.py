@@ -13,7 +13,7 @@ from statistics import mean, stdev
 import warnings
 
 import plot
-from plot import plotHistogram
+from plot import plotHistogram, plotScatter
 
 def tokenCountsFromFile(filePath, 
 tokenCounts = {}, 
@@ -128,11 +128,13 @@ def textualOutput(resultTuples, maxRows = 20):
 
 def plotKs(resultTuples):
 	ks = getKsFromResultTuples(resultTuples)
-	# use plot module to plot the ks
+	# plots a histogram of the distribution of k values
 	plotHistogram(ks)
+	# plots a scatter plot with ranks (x-axis) and k values (y axis)
+	plotScatter(ks)
 
 
-tokenCounts = tokenCountsFromFile('corpus/en.txt', 
+tokenCounts = tokenCountsFromFile('corpus/enLarge.txt', 
 	onlyPurelyAlphabetic = True, 
 	convertToLowerCase = True, 
 	tokenizerKind = 'word_punct_tokenize',
@@ -140,6 +142,7 @@ tokenCounts = tokenCountsFromFile('corpus/en.txt',
 resultTuples = createResultTuples(tokenCounts)
 textualOutput(resultTuples, maxRows = 20)
 plotKs(resultTuples)
+
 
 
 

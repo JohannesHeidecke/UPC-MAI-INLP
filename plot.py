@@ -32,3 +32,12 @@ def plotHistogram(data):
 
 	plt.show()
 
+def plotScatter(data):
+
+	x = list(range(1, len(data)+1))
+	y = data
+	area = np.pi # radius 1pt
+	plt.scatter(x, y, s=area)
+
+	plt.show()
+
