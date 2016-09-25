@@ -134,7 +134,7 @@ def plotKs(resultTuples):
 	plotScatter(ks)
 
 
-tokenCounts = tokenCountsFromFile('corpus/enLarge.txt', 
+tokenCounts = tokenCountsFromFile('corpus/en.txt', 
 	onlyPurelyAlphabetic = True, 
 	convertToLowerCase = True, 
 	tokenizerKind = 'word_punct_tokenize',
