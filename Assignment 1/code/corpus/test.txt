@@ -1,0 +1,24 @@
+'caresses', 'flies', 'dies', 'mules', 'denied',
+...            'died', 'agreed', 'owned', 'humbled', 'sized',
+...            'meeting', 'stating', 'siezing', 'itemization',
+...            'sensational', 'traditional', 'reference', 'colonizer',
+...            'plotted'
+
+'caresses', 'flies', 'dies', 'mules', 'denied',
+...            'died', 'agreed', 'owned', 'humbled', 'sized',
+...            'meeting', 'stating', 'siezing', 'itemization',
+...            'sensational', 'traditional', 'reference', 'colonizer',
+...            'plotted'
+
+'caresses', 'flies', 'dies', 'mules', 'denied',
+...            'died', 'agreed', 'owned', 'humbled', 'sized',
+...            'meeting' 'meeting' 'meeting' 'meeting' 'meeting', 'stating', 'siezing', 'itemization',
+...            'sensational', 'traditional', 'reference', 'colonizer',
+...            'plotted'
+
+'flies' dying dying dyin dying dying dyin dying dying dyin
+'flies'denied'denied'denied'denied' dies died dying dying dying dying dying dying dying
+'flies'
+'flies'
+'flies'
+'flies'
