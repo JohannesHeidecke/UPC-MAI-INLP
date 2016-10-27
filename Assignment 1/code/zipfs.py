@@ -14,7 +14,8 @@ from zipfs_functions import *
 corpi = {
 #	'en': 'corpus/en.txt',
 #	'es': 'corpus/es.txt',
-	'de': 'corpus/de-large.txt',
+#	'de': 'corpus/de-large.txt',
+	'test': 'corpus/test.txt'
 }
 
 '''
@@ -29,6 +30,7 @@ print('Calculate token frequencies with simple tokenization:')
 for corpus in corpi:
 	tokenFrequenciesCollection[corpus] = corpusToTokenFrequencies(corpi[corpus])
 	plotFrequencies(tokenFrequenciesCollection[corpus])
+print(tokenFrequenciesCollection['test'][:10])
 '''
 4) Compute the proportionality constant K between rank and frequency for each word.
 Compute its average and deviation.
@@ -57,6 +59,7 @@ for corpus in corpi:
 	tokenFrequenciesCollection[corpus] = filterTokenFrequencies(tokenFrequenciesCollection[corpus])
 	plotFrequencies(tokenFrequenciesCollection[corpus])
 kValuesReport(tokenFrequenciesCollection, plot = True);
+print(tokenFrequenciesCollection['test'][:10])
 
 '''
 6) Move to the char level 

@@ -1,0 +1,17 @@
+For each deliverable, besides attaching python files and, if needed, data files, a documentation has to be provided. The document has to be a .pdf file containing the following (be as brief as possible):
+
+
+
+d) Short (one paragraph) description of the content:
+
+
+e) Identifiers of the attached files:
+
+zipfs.py: Contains the script that runs the necessary high-level functions for tasks 1 - 6.
+
+zipfs_functions.py: Contains the functions in which the necessary steps for tasks 1 - 6 are implemented. Descriptions of the functions is given in the docstrings of this file.
+
+corpus/: Folder containing the corpi that our code utilizes. We also tried other languages and larger corpi, due to extensive file size they are not included in the delivery.
+
+
+f) Problems faced:
