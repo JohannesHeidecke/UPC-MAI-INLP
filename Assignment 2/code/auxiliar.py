@@ -73,11 +73,11 @@ def countNgrams(l,inic,end=0):
             U[(l[i])]=1
         else:
             U[(l[i])]+=1
-        if (l[i-1],l[i]) not in U:
+        if (l[i-1],l[i]) not in B:
             B[(l[i-1],l[i])] = 1
         else:
             B[(l[i-1],l[i])] +=1
-        if (l[i-2],l[i-1],l[i]) not in U:
+        if (l[i-2],l[i-1],l[i]) not in T:
             T[(l[i-2],l[i-1],l[i])] = 1
         else:
             T[(l[i-2],l[i-1],l[i])] +=1
